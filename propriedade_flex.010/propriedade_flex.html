@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedade Flex</title>
+    
+    <style>
+        .container {
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;/*Padrão*/
+        }
+
+        .item {
+            text-align: center;
+            background-color: lightslategray;
+            color: #ffffff;
+            border: 1px solid black;
+            flex-basis: 350px;
+           
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: red; font-size: 3em;">Primeiro exemplo</h1>
+    <p>Obs: usando flex-basis, flex-grow e flex-shrink individualmente.</p>
+    <div class="container">
+        <div class="item" style="flex-basis: 250px; flex-grow: 0; flex-shrink: 1;">A</div>
+        <div class="item" style="flex-basis: 250px; flex-grow: 2; flex-shrink: 0;">B</div>
+        <div class="item" style="flex-basis: 250px; flex-grow: 1; flex-shrink: 2;">C</div>
+    </div>
+    <br><br>
+    <h1 style="color: red; font-size: 3em;">Segundo exemplo</h1>
+    <p>Obs: usando propriedade flex.</p>
+    <div class="container">
+        <div class="item" style="flex: 0 1 250px; color: #ffffff; background-color: #000000; border: 1px solid #ffffff;" >A</div>
+        <div class="item" style="flex: 2 0 250px; color: #ffffff; background-color: #000000; border: 1px solid #ffffff;">B</div>
+        <div class="item" style="flex: 1 2 250px; color: #ffffff; background-color: #000000; border: 1px solid #ffffff;">C</div>
+
+</html>

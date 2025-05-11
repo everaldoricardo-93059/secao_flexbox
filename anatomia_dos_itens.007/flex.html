@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexibe Box 2</title>
+
+    <style>
+        .container {
+            height: 400px;
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .item {
+            text-align: center;
+            background-color: lightseagreen;
+            padding: 20px;
+            border: 1px solid black;
+            color: #ffffff;
+            font-weight: bold;
+            
+        }
+
+        #i1 {
+            order: 0;
+            align-self: flex-end;
+        }
+
+        #i2 {
+            order:-2;
+            align-self: center;
+        }
+
+        #i3 {
+            order: 4;
+            align-self: flex-end;
+        }
+
+        #i4 {
+            order: 8;
+            align-self: flex-start;
+        }
+
+        #i5 {
+            order: 2;
+            align-self: center;
+        }
+
+        #i6{
+            order: 0;
+            align-self: stretch;
+        }
+
+        #i7 {
+            order: -4;
+            align-self: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <div class="container id="i1">
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+        <div class="item" id="i4">D</div>
+        <div class="item" id="i5">E</div>
+        <div class="item" id="i6">F</div>
+        <div class="item" id="i7">G</div>
+
+
+    </div>
+</body>
+</html>
