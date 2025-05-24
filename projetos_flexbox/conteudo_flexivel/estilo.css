@@ -12,61 +12,48 @@ body {
     line-height: 1.5em;
 }
 
+header, .normal {
+    padding: 15px;
+}
+
 p{
     margin-bottom: 10px;
     text-align: justify;
 }
 
 h1, h2 {
-    margin-bottom: 10px;
     line-height: 1.2em;
+    margin-bottom: 20px;
     text-align: left;
 }
 
-header, .normal {
-    padding: 20px;
-    background-color: #ffffff;
-}
-
-.flex-content {
-    padding: 20px;
-    background-color: rgb(218, 209, 209);
+section.flex-content {
+    padding: 15px;
+    background-color: rgb(190, 184, 184);
 
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
 }
-
-/*section > article {
-    border: 2px dashed green;
-}*/
-
-.normal {
-    background-color: #ffffff;
-}
-
-article.text-media {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-
-}
-
 
 article.media-text {
     display: flex;
     flex-flow: row wrap-reverse;
     justify-content: space-between;
-    margin-bottom: 10px;
+}
 
-    
+article.text-media {
+    margin-top: 15px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
 article > div.text {
-    flex: 1 1  500px;
+    flex: 1 1 450px;
 }
 
 article > div.media {
-    flex: 1 0 400px;
+    flex: 1 450px;
 }
 
 div.media > img {
@@ -75,7 +62,7 @@ div.media > img {
 }
 
 div.media > iframe {
-    display: block;
     margin: auto;
-    width: 90%;
+    display: block;
+    width: 90%; /*Obs: configurando a largura do vídeo para não quebrar*/
 }
